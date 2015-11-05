@@ -1,0 +1,8 @@
+<div ng-if="storage.savedVideos">
+  <h2>Saved Videos</h2>
+  <ul class="saved-videos-list">
+    <li ng-repeat="videos in storage.savedVideos">
+      <a ng-href="/jiff-jiff/#/random" class="btn btn-lg btn-primary">{{video.title}}</a>
+    </li>
+  </ul>
+</div>
