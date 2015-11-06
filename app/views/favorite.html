@@ -1,8 +1,10 @@
 <div ng-if="storage.savedVideos">
-  <h2>Saved Videos</h2>
-  <ul class="saved-videos-list">
-    <li ng-repeat="videos in storage.savedVideos">
-      <a ng-href="/jiff-jiff/#/random" class="btn btn-lg btn-primary">{{video.title}}</a>
+  <h2>Favorite Jiff videos</h2>
+  <ul class="saved-cities-list">
+    <li ng-repeat="video in storage.savedVideos">
+      <a ng-href="https://www.youtube.com/embed/{{video.items}}">
+      <img ng-src="{{video.thumbnail}}" /><br>
+      {{video.title}}</a>
     </li>
   </ul>
 </div>

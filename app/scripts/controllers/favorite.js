@@ -8,6 +8,6 @@
  * Controller of the jiffJiffApp
  */
 angular.module('jiffJiffApp')
-  .controller('FavoriteCtrl', function ($scope, $localStorage) {
+  .controller('FavoriteCtrl', function ($scope, jiffAPI, $localStorage) {
     $scope.storage = $localStorage;
   });
