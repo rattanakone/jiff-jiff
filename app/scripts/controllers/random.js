@@ -30,10 +30,10 @@ angular.module('jiffJiffApp')
     if (!$localStorage.savedVideos){
         $localStorage.savedVideos = [videoData];
     } else {
-        // We have already saved some cities. 
-        // Check to make sure we haven't already saved the current city.
+        // We have already saved some videos. 
+        // Check to make sure we haven't already saved the current video.
         var save = true; // Initialize the save decision variable.
-        // Use this loop to check if we've already saved the city.
+        // Use this loop to check if we've already saved the video.
         for (var i=0; i < $localStorage.savedVideos.length; i++){
             if ($localStorage.savedVideos[i].items == videoData.title) {
                 // This is a duplicate, so don't save (variable set to false).

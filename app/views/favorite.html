@@ -1,10 +1,23 @@
+<div ng-controller="RandomCtrl">
 <div ng-if="storage.savedVideos">
   <h2>Favorite Jiff videos</h2>
-  <ul class="saved-cities-list">
+  <div class="row">
+  <center>
+  <ul class="saved-videos-list">
+  
     <li ng-repeat="video in storage.savedVideos">
-      <a ng-href="https://www.youtube.com/embed/{{video.items}}">
-      <img ng-src="{{video.thumbnail}}" /><br>
+    <div class="col-xs-12 col-md-6 col-lg-6">
+    <div class="grid-padding">
+    <a ng-href="https://www.youtube.com/embed/{{video.items}}" target="_blank" id="small-photos">
+      <img width="200" height="140" ng-src="{{video.thumbnail}}" /><br>
+      <br>
+      <br>
       {{video.title}}</a>
+    </div>
+    </div>  
     </li>
   </ul>
+  </center>
+  </div>
+</div>
 </div>

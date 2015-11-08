@@ -1,12 +1,17 @@
 <div class="jumbotron" id="jumbomain">
-  <h3>Click the button for a random Jiff video!</h3>
-  <br>
-  <div ng-bind-html="currentVideo"></div>
-  <br>
-  <p><a class="btn btn-info btn-lg btn-block" ng-click="getRandomVideo()">Random Jiff <span class="glyphicon glyphicon-heart-empty"></span></a></p>
-
-  <p><button class="btn btn-sm btn-primary" ng-click="saveVideo(videos)">Favorite video</button></p>
-  
- <p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-primary btn-lg btn-block">Your Favorite List<span class="glyphicon glyphicon-ok"></span></a></p>
-
+<div class="embed-responsive embed-responsive-4by3" id="video-wrapper">
+  <div ng-bind-html="currentVideo"></div>  
 </div>
+<br>
+<br>
+<h3>Click the button for a random Jiff video!</h3>
+<br>
+<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()">Random Jiff <span class="glyphicon glyphicon-heart-empty"></span></a></p>
+</div>
+
+
+
+  <p><button class="btn btn-danger btn-lg btn-block" ng-click="saveVideo(videos)">Favorite video  <span class="glyphicon glyphicon-heart-empty"></span></button></p>
+  
+ <p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-primary btn-lg btn-block">Your Favorite List  <span class="glyphicon glyphicon-ok"></span></a></p>
+ 
