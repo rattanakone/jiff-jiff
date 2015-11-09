@@ -1,17 +1,45 @@
+<div ng-messages="videoSaved">
+    <p class="video-saved-alert bg-success text-success" ng-message="success">
+        {{video.items}} Favorited!
+    </p>
+    <p class="video-saved-alert bg-warning text-warning" ng-message="duplicate">
+        {{video.items}} Already favorited!
+    </p>
+</div>
+
+
+<center><h1 class="heading-one">Watch Random Videos Of Jiff</h1></center>
+<br>
+<br>
+
+<div id="button-functions">
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok"></span></a></p>
+<p><button class="btn btn-sm btn-danger" ng-click="saveVideo(videos)"><span class="glyphicon glyphicon-heart"></span></button></p>
+<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()"><span class="glyphicon glyphicon-play"></span></a></p>
+</div>
+
+<br>
+<br>
+
 <div class="jumbotron" id="jumbomain">
 <div class="embed-responsive embed-responsive-4by3" id="video-wrapper">
   <div ng-bind-html="currentVideo"></div>  
 </div>
 <br>
 <br>
-<h3>Click the button for a random Jiff video!</h3>
 <br>
-<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()">Random Jiff <span class="glyphicon glyphicon-heart-empty"></span></a></p>
+<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()">Click For Random Jiff Videos  <span class="glyphicon glyphicon-play"></span></a></p>
+<p><a class="btn btn-sm btn-danger" ng-click="saveVideo(videos)">Favorite a video  <span class="glyphicon glyphicon-heart"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-primary">Your Favorites List   <span class="glyphicon glyphicon-ok"></span></a></p>
+
+
 </div>
 
+<br>
+<br>
 
 
-  <p><button class="btn btn-danger btn-lg btn-block" ng-click="saveVideo(videos)">Favorite video  <span class="glyphicon glyphicon-heart-empty"></span></button></p>
   
- <p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-primary btn-lg btn-block">Your Favorite List  <span class="glyphicon glyphicon-ok"></span></a></p>
+  
+
  

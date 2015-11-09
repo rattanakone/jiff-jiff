@@ -1,8 +1,12 @@
 body {
 	font-family: 'Permanent Marker', cursive;
-	background: whitesmoke;
+	background-image: url("../images/wood.jpg");
+	background-size: cover;
 	a:link {
 	color: black;
+	text-decoration: none;
+	}
+	a:visited {
 	text-decoration: none;
 	}
 }
@@ -16,12 +20,13 @@ body {
 }
 
 .grid-padding { 
-	margin:5px; 
+	margin:55px; 
 	padding:5px;
 }
 
-
-
+.heading-one {
+	color: black;
+}
 
 .polaroid-images a
 {
@@ -133,9 +138,9 @@ body {
 	background: white;
 	border-radius: 0px;
 	display: inline;
-	float: left;
+	float: right;
 	margin: 0 5px 15px;
-	padding: 10px 10px 60px;
+	padding: 10px 10px 50px;
 	text-align: center;
 	text-decoration: none;
 	-webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
@@ -147,5 +152,25 @@ body {
 	z-index:0;
         position:relative;
 	
+}
+
+#small-photos-hover {
+	a:hover {
+	-webkit-box-shadow: 0 10px 16px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 10px 16px rgba(0,0,0,.3);
+	box-shadow: 0 10px 16px rgba(0,0,0,.3);
+	-webkit-transition: all .15s linear;
+	-moz-transition: all .15s linear;
+	transition: all .15s linear;
+	}
+	a:visited {
+	color: black;
+	}
+}
+
+#button-functions p {
+	display: inline;
+	float: right;
+	width: 40px;
 }
 
