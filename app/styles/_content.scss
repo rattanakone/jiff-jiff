@@ -4,12 +4,13 @@ body {
 	background-size: cover;
 	background-repeat: repeat;
 	background-position: center center;
+	color: black;
 	a:link {
 	color: black;
 	text-decoration: none;
 	}
 	a:visited {
-	color: black;
+	
 	text-decoration: none;
 	}
 }
@@ -174,7 +175,7 @@ body {
 
 #button-functions {
 	a:visited {
-	color: black;
+	color: white;
 	}
 	p {
 	display: inline;
@@ -185,7 +186,7 @@ body {
 
 #button-functions-two {
 	a:visited {
-	color: black;
+	color: white;
 	}
 	p {
 	display: inline;

@@ -27,7 +27,7 @@
 
 <div ng-if="storage.savedVideos">
 <div id="button-functions-two">
-<p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-default" alt="Who is Jiff?">about <span class="glyphicon glyphicon-sunglasses"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-primary" alt="Who is Jiff?">about <span class="glyphicon glyphicon-sunglasses"></span></a></p>
 <p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning" alt="Home">home <span class="glyphicon glyphicon-home"></span></a></p>
 </div>
   <br>
@@ -37,7 +37,7 @@
     <li ng-repeat="video in storage.savedVideos">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <div class="grid-padding">
-    <a ng-href="https://www.youtube.com/embed/{{video.items}}" id="small-photos">
+    <a ng-href="https://www.youtube.com/embed/{{video.items}}" id="small-photos" target="_self">
       <img width="200" height="140" ng-src="{{video.thumbnail}}" /><br>
       <br>
       <br>
