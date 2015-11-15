@@ -1,8 +1,17 @@
 div[ng-view].ng-enter {
-    -webkit-animation: fadeIn 0.1s;
-    animation: fadeIn 0.1s;
+	-moz-animation: fadeIn 0.4s;
+    -ms-animation: fadeIn 0.4s;
+    -o-animation: fadeIn 0.4s;
+    -webkit-animation: fadeIn 0.4s;
+    animation: fadeIn 0.4s;
 }
 div[ng-view].ng-leave {
-    -webkit-animation: fadeOut 0.2s;
-    animation: fadeOut 0.2s;
+	-moz-animation: fadeOut 0.4s;
+    -ms-animation: fadeOut 0.4s;
+    -o-animation: fadeOut 0.4s;
+    -webkit-animation: fadeOut 0.4s;
+    animation: fadeOut 0.4s;
 }
+
+
+

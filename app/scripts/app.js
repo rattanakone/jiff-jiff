@@ -35,12 +35,14 @@ angular
       .when('/random', {
         templateUrl: 'views/random.html',
         controller: 'RandomCtrl',
-        controllerAs: 'random'
+        controllerAs: 'random',
+        css: 'styles/main.css'
       })
       .when('/favorite', {
         templateUrl: 'views/favorite.html',
         controller: 'FavoriteCtrl',
-        controllerAs: 'favorite'
+        controllerAs: 'favorite',
+        css: 'styles/main.css'
       })
       .otherwise({
         redirectTo: '/'

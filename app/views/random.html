@@ -1,3 +1,12 @@
+<div class="main-title-two">
+<center><h1 align="center">Watch Random Jiff!</h1></center>
+</div>
+<br>
+<br>
+<div>
+	<img src="images/blue.png">
+</div>
+
 <div ng-messages="videoSaved">
     <p class="video-saved-alert bg-success text-success" ng-message="success">
         You just favorited a video!
@@ -7,38 +16,50 @@
     </p>
 </div>
 
-
-<center><h1 class="heading-one">Watch Random Videos Of Jiff</h1></center>
-<br>
-<br>
-
 <div id="button-functions">
-<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-ok"></span></a></p>
-<p><button class="btn btn-sm btn-danger" ng-click="saveVideo(videos)"><span class="glyphicon glyphicon-heart"></span></button></p>
-<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()"><span class="glyphicon glyphicon-play"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-default">about <span class="glyphicon glyphicon-sunglasses"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning">home<span class="glyphicon glyphicon-home"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-info">list  <span class="glyphicon glyphicon-ok"></span></a></p>
+<p><button class="btn btn-sm btn-danger" ng-click="saveVideo(videos)">love <span class="glyphicon glyphicon-heart"></span></button></p>
+<p><a class="btn btn-sm btn-success" ng-click="getRandomVideo()">play <span class="glyphicon glyphicon-play"></span></a></p>
 </div>
 
 <br>
 <br>
+<br>
+
 
 <div class="jumbotron" id="jumbomain">
 <div class="embed-responsive embed-responsive-4by3" id="video-wrapper">
   <div ng-bind-html="currentVideo"></div>  
 </div>
-<br>
-<br>
-<br>
-<p><a class="btn btn-sm btn-info" ng-click="getRandomVideo()">Click For Random Jiff Videos  <span class="glyphicon glyphicon-play"></span></a></p>
-<p><a class="btn btn-sm btn-danger" ng-click="saveVideo(videos)">Favorite a video  <span class="glyphicon glyphicon-heart"></span></a></p>
-<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-primary">Your Favorites List   <span class="glyphicon glyphicon-ok"></span></a></p>
 
+<br>
+<br>
+<br>
+<p><a class="btn btn-success btn-sm" ng-click="getRandomVideo()">Play Random Videos  <span class="glyphicon glyphicon-play"></span></a></p>
+<p><a class="btn btn-danger btn-sm" ng-click="saveVideo(videos)">Love a video  <span class="glyphicon glyphicon-heart"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-info btn-sm">Your favorite List   <span class="glyphicon glyphicon-ok"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/" class="btn btn-warning btn-sm">Home   <span class="glyphicon glyphicon-home"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/about" class="btn btn-default btn-sm" alt="Who is Jiff?">Who is Jiff? <span class="glyphicon glyphicon-sunglasses"></span></a></p>
 
 </div>
 
-<br>
-<br>
+<div class="chips">
+	<img src="images/chipscorner.png">
+</div>
 
+<div class="chips-bottom">
+	<img src="images/chipsbottom.png"><img src="images/popcornbottom.png">
+</div>
 
+<div class="popcorn">
+	<img src="images/popcorncorner.png">
+</div>
+
+<div class="popcorn-bottom">
+	<img src="images/popcornbottom.png"><img src="images/chipsbottom.png">
+</div>
   
   
 

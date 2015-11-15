@@ -1,19 +1,52 @@
-<center><h1 class="heading-one">Watch Your Favorites</h1></center>
+<div class="main-title-three">
+  <center><h1 align="center">Watch Your Favorites!</h1></center>
+</div>
+<img src="images/pink.png">
+
+
+
+<br>
+
+<div ng-if="!storage.savedVideos">
+
+<center><h2 class="heading-one">Oops...you haven't favorited any videos yet</h2></center> 
+<br>
+<br>
+<center>
+<div class="polaroid-images">
+<a ng-href="/jiff-jiff/#/" title="Home"><img height="200" src="images/jiffandrestaurant.jpg" alt="Jiff at restaurant" title="Jiff at restaurant" /></a>  
+<a ng-href="/jiff-jiff/#/random" title="--> click here! <--"><img height="200" src="images/jiffpaws.jpg" alt="front paws" title="Click Here!" /></a> 
+<a ng-href="/jiff-jiff/#/about" title="Who is Jiff?"><img height="200" src="images/jiffandpancakes.jpg" alt="Jiff staring at pancakes" title="Jiff staring at pancakes" /></a>
+
+</div> 
+</center>
+
+</div>
+
+
+
 <div ng-if="storage.savedVideos">
+<div id="button-functions-two">
+<p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-default" alt="Who is Jiff?">about <span class="glyphicon glyphicon-sunglasses"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning" alt="Home">home <span class="glyphicon glyphicon-home"></span></a></p>
+</div>
+  <br>
   <br>
   <div class="row" id="small-photos-hover">
   <ul class="saved-videos-list">
     <li ng-repeat="video in storage.savedVideos">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
     <div class="grid-padding">
-    <a ng-href="https://www.youtube.com/embed/{{video.items}}" target="_blank" id="small-photos">
+    <a ng-href="https://www.youtube.com/embed/{{video.items}}" id="small-photos">
       <img width="200" height="140" ng-src="{{video.thumbnail}}" /><br>
       <br>
       <br>
-      Your Favorite!</a>
+      Favorite Jiff </a>
     </div>
     </div>  
     </li>
   </ul>
   </div>
 </div>
+
+
