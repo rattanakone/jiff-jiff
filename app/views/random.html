@@ -7,26 +7,29 @@
 	<img src="images/blue.png">
 </div>
 
-<div ng-messages="videoSaved">
-    <p class="video-saved-alert bg-success text-success" ng-message="success">
-        You just favorited a video!
-    </p>
-    <p class="video-saved-alert bg-warning text-warning" ng-message="duplicate">
-        Oops...you already favorited this video.
-    </p>
-</div>
+
 
 <div id="button-functions">
 <p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-primary">visit <span class="glyphicon glyphicon-sunglasses"></span></a></p>
 <p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning">home<span class="glyphicon glyphicon-home"></span></a></p>
-<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-info">list  <span class="glyphicon glyphicon-ok"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-sm btn-info">list <span class="glyphicon glyphicon-ok"></span></a></p>
 <p><button class="btn btn-sm btn-danger" ng-click="saveVideo(videos)">love <span class="glyphicon glyphicon-heart"></span></button></p>
 <p><a class="btn btn-sm btn-success" ng-click="getRandomVideo()">play <span class="glyphicon glyphicon-play"></span></a></p>
 </div>
 
 <br>
 <br>
-<br>
+
+<div ng-messages="videoSaved">
+    <p class="video-saved-alert bg-info text-info" ng-message="success">
+        You just favorited a video!
+    </p>
+    <p class="video-saved-alert bg-danger text-danger" ng-message="duplicate">
+        Oops...you already favorited this video.
+    </p>
+    
+</div>
+
 
 
 <div class="jumbotron" id="jumbomain">
@@ -35,14 +38,26 @@
 </div>
 
 <br>
+
+<div ng-messages="videoSaved">
+    <p class="video-saved-alert bg-info text-info" ng-message="success">
+        You just favorited a video!
+    </p>
+    <p class="video-saved-alert bg-danger text-danger" ng-message="duplicate">
+        Oops...you already favorited this video.
+    </p>
+    
+</div>
+
 <br>
 <br>
+<div class="large-buttons">
 <p><a class="btn btn-success btn-sm" ng-click="getRandomVideo()">Play Random Videos  <span class="glyphicon glyphicon-play"></span></a></p>
 <p><a class="btn btn-danger btn-sm" ng-click="saveVideo(videos)">Love a video  <span class="glyphicon glyphicon-heart"></span></a></p>
-<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-info btn-sm">Your favorite List   <span class="glyphicon glyphicon-ok"></span></a></p>
+<p><a ng-href="/jiff-jiff/#/favorite" class="btn btn-info btn-sm">Favorite List   <span class="glyphicon glyphicon-ok"></span></a></p>
 <p><a ng-href="/jiff-jiff/#/" class="btn btn-warning btn-sm">Home   <span class="glyphicon glyphicon-home"></span></a></p>
 <p><a ng-href="/jiff-jiff/#/about" class="btn btn-primary btn-sm" alt="Who is Jiff?">Visit Jiff's Website <span class="glyphicon glyphicon-sunglasses"></span></a></p>
-
+</div>
 
 </div>
 

@@ -174,6 +174,9 @@ body {
 }
 
 #button-functions {
+	a:link {
+	color: white;
+	}
 	a:visited {
 	color: white;
 	}
@@ -184,14 +187,12 @@ body {
 	}
 }
 
-#button-functions-two {
-	a:visited {
+.large-buttons {
+	a:link {
 	color: white;
 	}
-	p {
-	display: inline;
-	float: right;
-	width: 75px;
+	a:visited {
+	color: white;
 	}
 }
 
@@ -236,6 +237,20 @@ body {
 	}
 }
 
+.main-title-four {
+	position: absolute;
+	top: 13%;
+	left: 31%;
+	font-size: 250%;
+	padding-left: 20px;
+	width: 35%;
+	line-height: 35px;
+	color: black;
+	a {
+	color: black;
+	}
+}
+
 .coffee-stain {
 	position: absolute;
 	top: 35%;
@@ -268,7 +283,7 @@ body {
 
 .chips-bottom {
 	position: absolute;
-	top: 1420px;
+	top: 1490px;
 	left: 0px;
 }
 
@@ -280,7 +295,25 @@ body {
 
 .popcorn-bottom {
 	position: absolute;
-	top: 1420px;
+	top: 1490px;
+	right: 0px;
+}
+
+.fries {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+.burger {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.coke {
+	position: absolute;
+	top: 350px;
 	right: 0px;
 }
 

@@ -1,21 +1,23 @@
 <div class="main-title-three">
   <center><h1 align="center">Watch Your Favorites!</h1></center>
 </div>
-<img src="images/pink.png">
+<a href="/jiff-jiff/#/random"><img src="images/pink.png"></a>
 
 
 
 <br>
+<br>
+<br>
+<br>
+<br>
 
 <div ng-if="!storage.savedVideos">
-
-<center><h2 class="heading-one">Oops...you haven't favorited any videos yet</h2></center> 
 <br>
 <br>
 <center>
 <div class="polaroid-images">
 <a ng-href="/jiff-jiff/#/" title="Home"><img height="200" src="images/jiffandrestaurant.jpg" alt="Jiff at restaurant" title="Jiff at restaurant" /></a>  
-<a ng-href="/jiff-jiff/#/random" title="--> click here! <--"><img height="200" src="images/jiffpaws.jpg" alt="front paws" title="Click Here!" /></a> 
+<a ng-href="/jiff-jiff/#/random" title="Start Favorite List!"><img height="200" src="images/jiffpaws.jpg" alt="front paws" title="Click Here!" /></a> 
 <a ng-href="/jiff-jiff/#/about" title="Visit Jiff's Website"><img height="200" src="images/jiffandpancakes.jpg" alt="Jiff staring at pancakes" title="Jiff staring at pancakes" /></a>
 
 </div> 
@@ -26,12 +28,9 @@
 
 
 <div ng-if="storage.savedVideos">
-<div id="button-functions-two">
-<p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-primary" alt="Who is Jiff?">visit <span class="glyphicon glyphicon-sunglasses"></span></a></p>
-<p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning" alt="Home">home <span class="glyphicon glyphicon-home"></span></a></p>
-</div>
+
   <br>
-  <br>
+
   <div class="row" id="small-photos-hover">
   <ul class="saved-videos-list">
     <li ng-repeat="video in storage.savedVideos">
@@ -50,4 +49,16 @@
   </div>
 </div>
 
+
+<div class="fries">
+  <img src="images/halffries.png">
+</div>
+
+<div class="burger">
+  <img src="images/burger.png">
+</div>
+
+<div class="coke">
+  <img src="images/coke.png">
+</div>
 
