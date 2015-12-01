@@ -1,14 +1,16 @@
+<!-- title for post it -->
 <div class="main-title-two">
 <center><h1 align="center">Watch Random Jiff!</h1></center>
 </div>
 <br>
 <br>
+<!-- post it  -->
 <div>
 	<img src="images/blue.png">
 </div>
 
 
-
+<!-- navigation above polaroid -->
 <div id="button-functions">
 <p><a ng-href="/jiff-jiff/#/about" class="btn btn-sm btn-primary">visit <span class="glyphicon glyphicon-sunglasses"></span></a></p>
 <p><a ng-href="/jiff-jiff/#/" class="btn btn-sm btn-warning">home<span class="glyphicon glyphicon-home"></span></a></p>
@@ -19,7 +21,7 @@
 
 <br>
 <br>
-
+<!-- message above polaroid -->
 <div ng-messages="videoSaved" ng-show="videoSaved" class="message fadein fadeout">
     <p class="video-saved-alert bg-info text-info" ng-message="success" align="center">
         &quot; Yay! You just favorited a video! &quot;
@@ -31,7 +33,7 @@
 </div>
 
 
-
+<!-- polaroid -->
 <div class="jumbotron" id="jumbomain">
 <div class="embed-responsive embed-responsive-4by3" id="video-wrapper">
   <div ng-bind-html="currentVideo"></div> 
@@ -48,7 +50,7 @@
 </div>
 
 <br>
-
+<!-- messages inside polaroid -->
 <div ng-messages="videoSaved" ng-show="videoSaved" class="message fadein fadeout">
     <p class="video-saved-alert bg-info text-info" ng-message="success">
         &quot; Yay! You just favorited a video! &quot;
@@ -60,6 +62,7 @@
 </div>
 
 <br>
+<!-- navigation inside polaroid -->
 <div class="large-buttons">
 <p><a class="btn btn-success btn-sm" ng-click="getRandomVideo()">Play Random Videos  <span class="glyphicon glyphicon-play"></span></a></p>
 <p><a class="btn btn-danger btn-sm" ng-click="saveVideo(videos)">Love a video  <span class="glyphicon glyphicon-heart"></span></a></p>
@@ -69,7 +72,7 @@
 </div>
 
 </div>
-
+<!-- extra images -->
 <div class="chips hvr-buzz">
 	<img src="images/chipscorner.png">
 </div>

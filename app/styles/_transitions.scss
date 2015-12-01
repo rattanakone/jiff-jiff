@@ -1,3 +1,5 @@
+/* transition for entering and leaving a view */
+
 div[ng-view].ng-enter {
 	-moz-animation: fadeIn 0.4s;
     -ms-animation: fadeIn 0.4s;
@@ -12,6 +14,8 @@ div[ng-view].ng-leave {
     -webkit-animation: fadeOut 0.4s;
     animation: fadeOut 0.4s;
 }
+
+/* transition for showing and hiding messages */
 
 .fadein.ng-hide-remove,
 .fadeout.ng-hide-add {

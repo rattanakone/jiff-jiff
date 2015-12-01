@@ -10,7 +10,7 @@
 angular.module('jiffJiffApp')
   .controller('FavoriteCtrl', function ($scope, jiffAPI, $sce, $localStorage) {
     $scope.videosFound = jiffAPI.query();
-    $scope.storage = $localStorage;
+    $scope.storage = $localStorage; // local storage is saved in the favorite view
 
     $scope.findVideos = function(){
         $scope.videosFound = jiffAPI.query({

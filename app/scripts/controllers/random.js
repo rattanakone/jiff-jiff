@@ -10,19 +10,21 @@
 angular.module('jiffJiffApp')
   .controller('RandomCtrl', function ($scope, jiffAPI, $sce, $localStorage, $timeout) {
     var copyRandomIndex = 0;
-    $scope.videos = jiffAPI.query();
+    // global variable for functions to grab index
+    $scope.videos = jiffAPI.query(); 
+    // api call 
   	$scope.getRandomVideo = function () {
-  		var randomIndex = Math.floor(Math.random()*50) +1;
-  		var embedCode = '<iframe ng-if="currentVideo" width="580" height="350" src="https://www.youtube.com/embed/' + $scope.videos.items[randomIndex].id.videoId + '" frameborder="0" allowfullscreen></iframe>';
-  		$scope.currentVideo = $sce.trustAsHtml(embedCode);
-  		console.log("set current video to: " + $scope.currentVideo);
-      console.log($scope.videos.items[randomIndex].id.videoId);
-      copyRandomIndex = randomIndex;
+  		var randomIndex = Math.floor(Math.random()*50) +1; // randomizes the api video id
+  		var embedCode = '<iframe ng-if="currentVideo" width="580" height="350" src="https://www.youtube.com/embed/' + $scope.videos.items[randomIndex].id.videoId + '" frameborder="0" allowfullscreen></iframe>'; // iframe embed video 
+  		$scope.currentVideo = $sce.trustAsHtml(embedCode); // sce to trust the html and iframe
+  		console.log("set current video to: " + $scope.currentVideo); // console log current video that is displayed
+      console.log($scope.videos.items[randomIndex].id.videoId); // console log current video id
+      copyRandomIndex = randomIndex; // grabs the first index when random the first time
 
   	};
 
   	$scope.saveVideo = function(video){
-    var videoData = {
+    var videoData = { // grabs items array in api for random videos to be saved in local storage
     	'items': video.items[copyRandomIndex].id.videoId,
       'title': video.items[copyRandomIndex].snippet.title,
       'thumbnail': video.items[copyRandomIndex].snippet.thumbnails.high.url
