@@ -6,6 +6,14 @@
     animation: slideInUp 2s;
 }
 
+.donut {
+    -moz-animation: fadeInDownBig 3s;
+    -ms-animation: fadeInDownBig 3s;
+    -o-animation: fadeInDownBig 3s;
+    -webkit-animation: fadeInDownBig 3s;
+    animation: fadeInDownBig 3s;
+}
+
 .polaroid-images {
 	-moz-animation: pulse 0.9s;
     -ms-animation: pulse 0.9s;
@@ -13,3 +21,12 @@
 	-webkit-animation: pulse 0.9s;
     animation: pulse 0.9s;
 }
+
+.milk {
+    -moz-animation: bounceInDown 2s;
+    -ms-animation: bounceInDown 2s;
+    -o-animation: bounceInDown 2s;
+    -webkit-animation: bounceInDown 2s;
+    animation: bounceInDown 2s;
+}
+

@@ -8,7 +8,7 @@
  * Controller of the jiffJiffApp
  */
 angular.module('jiffJiffApp')
-  .controller('RandomCtrl', function ($scope, jiffAPI, $sce, $localStorage) {
+  .controller('RandomCtrl', function ($scope, jiffAPI, $sce, $localStorage, $timeout) {
     var copyRandomIndex = 0;
     $scope.videos = jiffAPI.query();
   	$scope.getRandomVideo = function () {
@@ -29,6 +29,18 @@ angular.module('jiffJiffApp')
     };
     if (!$localStorage.savedVideos){
         $localStorage.savedVideos = [videoData];
+        // displays message when first video is saved for the first time
+         $scope.videoSaved = {
+                'success': true
+            };
+          // 2 seconds loading delay for success when first video is saved
+            $timeout(function() {
+
+              // show message for 3 more seconds for success when first video is saved
+              $timeout(function() {
+                $scope.videoSaved = false;
+              }, 3000);
+            }, 2000);
     } else {
         // We have already saved some videos. 
         // Check to make sure we haven't already saved the current video.
@@ -46,12 +58,31 @@ angular.module('jiffJiffApp')
             $scope.videoSaved = {
                 'success': true
             };
+
+            // 2 seconds loading delay for success
+            $timeout(function() {
+
+              // show message for 3 more seconds for success
+              $timeout(function() {
+                $scope.videoSaved = false;
+              }, 3000);
+            }, 2000);
+
         } else {
             console.log('video already saved');
             // Add object to trigger messages
             $scope.videoSaved = {
                 'duplicate': true
             };
+
+            // 2 seconds loading delay for duplicate
+            $timeout(function() {
+
+              // show message for 3 more seconds for duplicate 
+              $timeout(function() {
+                $scope.videoSaved = false;
+              }, 3000);
+            }, 2000);
         }
     }
 };

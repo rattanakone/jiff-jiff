@@ -20,12 +20,12 @@
 <br>
 <br>
 
-<div ng-messages="videoSaved">
-    <p class="video-saved-alert bg-info text-info" ng-message="success">
-        You just favorited a video!
+<div ng-messages="videoSaved" ng-show="videoSaved" class="message fadein fadeout">
+    <p class="video-saved-alert bg-info text-info" ng-message="success" align="center">
+        &quot; Yay! You just favorited a video! &quot;
     </p>
-    <p class="video-saved-alert bg-danger text-danger" ng-message="duplicate">
-        Oops...you already favorited this video.
+    <p class="video-saved-alert bg-danger text-danger" ng-message="duplicate" align="center">
+        &quot; Uh oh! You already favorited this video... &quot;
     </p>
     
 </div>
@@ -34,22 +34,31 @@
 
 <div class="jumbotron" id="jumbomain">
 <div class="embed-responsive embed-responsive-4by3" id="video-wrapper">
-  <div ng-bind-html="currentVideo"></div>  
+  <div ng-bind-html="currentVideo"></div> 
+  <br>
+  <br>
+  <br> 
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h3 align="center">&quot; Click the green play button above or below &quot;</h3>
 </div>
 
 <br>
 
-<div ng-messages="videoSaved">
+<div ng-messages="videoSaved" ng-show="videoSaved" class="message fadein fadeout">
     <p class="video-saved-alert bg-info text-info" ng-message="success">
-        You just favorited a video!
+        &quot; Yay! You just favorited a video! &quot;
     </p>
     <p class="video-saved-alert bg-danger text-danger" ng-message="duplicate">
-        Oops...you already favorited this video.
+        &quot; Uh oh! You already favorited this video... &quot;
     </p>
     
 </div>
 
-<br>
 <br>
 <div class="large-buttons">
 <p><a class="btn btn-success btn-sm" ng-click="getRandomVideo()">Play Random Videos  <span class="glyphicon glyphicon-play"></span></a></p>
@@ -61,19 +70,19 @@
 
 </div>
 
-<div class="chips">
+<div class="chips hvr-buzz">
 	<img src="images/chipscorner.png">
 </div>
 
-<div class="chips-bottom">
+<div class="chips-bottom hvr-buzz">
 	<img src="images/chipsbottom.png"><img src="images/popcornbottom.png">
 </div>
 
-<div class="popcorn">
+<div class="popcorn hvr-pop">
 	<img src="images/popcorncorner.png">
 </div>
 
-<div class="popcorn-bottom">
+<div class="popcorn-bottom hvr-pop hvr-buzz">
 	<img src="images/popcornbottom.png"><img src="images/chipsbottom.png">
 </div>
   
